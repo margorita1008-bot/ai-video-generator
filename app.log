@@ -2911,3 +2911,222 @@
 2025-10-05 02:03:32,773 - __main__ - INFO - Application configured with Replicate API
 2025-10-05 02:03:32,799 - werkzeug - WARNING -  * Debugger is active!
 2025-10-05 02:03:32,868 - werkzeug - INFO -  * Debugger PIN: 200-569-590
+2025-10-05 02:03:59,753 - __main__ - INFO - Starting AI Video Generator application
+2025-10-05 02:03:59,754 - __main__ - INFO - Application configured with Replicate API
+2025-10-05 02:03:59,845 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-05 02:03:59,854 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-05 02:03:59,872 - werkzeug - INFO -  * Restarting with stat
+2025-10-05 02:04:01,560 - __main__ - INFO - Starting AI Video Generator application
+2025-10-05 02:04:01,560 - __main__ - INFO - Application configured with Replicate API
+2025-10-05 02:04:01,578 - werkzeug - WARNING -  * Debugger is active!
+2025-10-05 02:04:01,653 - werkzeug - INFO -  * Debugger PIN: 200-569-590
+2025-10-05 02:04:16,681 - __main__ - INFO - Home page accessed
+2025-10-05 02:04:16,715 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 02:04:16] "GET / HTTP/1.1" 200 -
+2025-10-05 02:04:34,744 - __main__ - INFO - URL validation requested for: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:04:34,852 - __main__ - INFO - Testing URL accessibility: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:04:37,045 - __main__ - INFO - Image details - Content-Type: image/jpeg, Size: 1823488 bytes
+2025-10-05 02:04:37,045 - __main__ - INFO - URL validation successful: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:04:37,050 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 02:04:37] "POST /validate_url HTTP/1.1" 200 -
+2025-10-05 02:06:30,272 - __main__ - INFO - URL validation requested for: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:06:30,272 - __main__ - INFO - Testing URL accessibility: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:06:31,967 - __main__ - INFO - Image details - Content-Type: image/jpeg, Size: 1823488 bytes
+2025-10-05 02:06:31,968 - __main__ - INFO - URL validation successful: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:06:31,971 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 02:06:31] "POST /validate_url HTTP/1.1" 200 -
+2025-10-05 02:06:36,463 - __main__ - INFO - URL validation requested for: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:06:36,478 - __main__ - INFO - Testing URL accessibility: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:06:38,066 - __main__ - INFO - Image details - Content-Type: image/jpeg, Size: 1823488 bytes
+2025-10-05 02:06:38,068 - __main__ - INFO - URL validation successful: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:06:38,073 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 02:06:38] "POST /validate_url HTTP/1.1" 200 -
+2025-10-05 02:07:13,735 - __main__ - INFO - URL validation requested for: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:07:13,736 - __main__ - INFO - Testing URL accessibility: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:07:15,460 - __main__ - INFO - Image details - Content-Type: image/jpeg, Size: 1823488 bytes
+2025-10-05 02:07:15,463 - __main__ - INFO - URL validation successful: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:07:15,469 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 02:07:15] "POST /validate_url HTTP/1.1" 200 -
+2025-10-05 02:07:57,327 - __main__ - INFO - URL validation requested for: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:07:57,330 - __main__ - INFO - Testing URL accessibility: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:07:57,872 - __main__ - INFO - Video generation request started - Prompt: 'Create an  austronaut who walks and then jumps...', Image: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww, Duration: 5s
+2025-10-05 02:07:57,915 - __main__ - INFO - Calling Replicate API with parameters: {'mode': 'standard', 'prompt': 'Create an  austronaut who walks and then jumps', 'duration': 5, 'start_image': 'https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww', 'negative_prompt': ''}
+2025-10-05 02:07:58,110 - __main__ - INFO - Image URL being used: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:07:58,243 - __main__ - INFO - Image URL starts with http: True
+2025-10-05 02:07:58,329 - __main__ - INFO - Image URL length: 153
+2025-10-05 02:07:58,350 - __main__ - INFO - Starting Replicate API call - this will poll for completion...
+2025-10-05 02:08:13,481 - __main__ - INFO - Image details - Content-Type: image/jpeg, Size: 1823488 bytes
+2025-10-05 02:08:13,504 - __main__ - INFO - URL validation successful: https://images.unsplash.com/photo-1541873676-a18131494184?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0cm9uYXV0fGVufDB8fDB8fHww
+2025-10-05 02:08:13,791 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 02:08:13] "POST /validate_url HTTP/1.1" 200 -
+2025-10-05 02:08:20,608 - httpx - INFO - HTTP Request: POST https://api.replicate.com/v1/models/kwaivgi/kling-v2.1/predictions "HTTP/1.1 201 Created"
+2025-10-05 02:08:21,278 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:22,002 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:22,719 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:23,449 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:24,141 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:24,953 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:26,015 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:26,741 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:27,583 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:28,367 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:29,261 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:29,973 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:30,694 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:31,800 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:32,662 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:33,366 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:34,271 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:35,042 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:35,799 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:36,825 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:37,516 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:38,199 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:39,040 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:39,870 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:40,666 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:41,772 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:42,485 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:43,537 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:44,348 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:45,056 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:45,899 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:47,212 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:47,941 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:48,786 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:49,470 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:50,168 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:50,882 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:51,655 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:52,452 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:53,169 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:53,971 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:54,785 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:55,562 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:56,300 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:57,022 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:57,813 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:58,652 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:08:59,451 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:00,367 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:01,236 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:02,040 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:02,801 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:03,869 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:04,618 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:05,773 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:06,521 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:07,418 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:08,149 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:08,903 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:09,799 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:10,531 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:11,210 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:12,010 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:12,702 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:13,511 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:14,332 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:15,280 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:16,041 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:16,750 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:17,417 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:18,074 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:18,859 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:19,859 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:20,593 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:21,317 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:22,107 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:22,950 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:23,829 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:24,511 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:25,181 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:25,868 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:26,530 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:27,180 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:27,832 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:28,493 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:29,157 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:29,830 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:30,741 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:31,532 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:32,184 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:32,858 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:33,518 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:34,246 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:34,899 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:35,560 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:36,213 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:36,867 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:37,533 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:38,208 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:38,906 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:39,563 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:40,238 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:40,903 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:41,571 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:42,230 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:42,883 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:43,544 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:44,216 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:44,872 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:45,558 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:46,648 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:47,321 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:47,995 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:48,659 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:49,330 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:49,992 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:50,656 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:51,329 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:52,253 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:52,917 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:53,596 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:54,273 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:54,928 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:55,611 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:56,296 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:56,979 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:57,641 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:58,296 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:58,958 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:09:59,638 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:00,312 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:00,990 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:01,653 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:02,306 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:02,967 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:03,640 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:04,291 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:04,950 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:05,623 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:06,292 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:06,955 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:07,617 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:08,541 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:09,189 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:09,839 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:10,508 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:11,161 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:11,823 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:12,500 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:13,153 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:14,068 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:14,733 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:15,383 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:16,053 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:16,729 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:17,386 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:18,038 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:18,699 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:19,366 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:20,045 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:20,716 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:21,376 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:22,050 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:22,707 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:23,382 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:24,045 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:25,018 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:25,681 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:26,332 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:26,998 - httpx - INFO - HTTP Request: GET https://api.replicate.com/v1/predictions/q49zpg5zrdrm80csp5xrzc1hrr "HTTP/1.1 200 OK"
+2025-10-05 02:10:26,999 - __main__ - INFO - Replicate API call completed in 148.65 seconds
+2025-10-05 02:10:27,000 - __main__ - INFO - Note: The multiple HTTP requests you see are Replicate's polling mechanism checking generation status
+2025-10-05 02:10:27,000 - __main__ - INFO - Video output: https://replicate.delivery/xezq/AAQ7Rs12O5qKMh7oK3KaE80L6ETXs0hyYf8u2e3OP4Qit1bVA/tmp9zrrpd0r.mp4
+2025-10-05 02:10:27,000 - __main__ - INFO - Video generated successfully: https://replicate.delivery/xezq/AAQ7Rs12O5qKMh7oK3KaE80L6ETXs0hyYf8u2e3OP4Qit1bVA/tmp9zrrpd0r.mp4
+2025-10-05 02:10:27,001 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 02:10:27] "POST /generate HTTP/1.1" 200 -
