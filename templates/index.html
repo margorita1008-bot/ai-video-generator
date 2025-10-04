@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            padding: 40px;
+            background-color: #111;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: #222;
+            border: 2px solid #333;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus, textarea:focus {
+            outline: none;
+            border-color: #fff;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .url-info {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .duration-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input[type="number"] {
+            width: 80px;
+            padding: 8px;
+            background-color: #222;
+            border: 2px solid #333;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .generate-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .generate-btn:hover {
+            background-color: #ccc;
+            transform: translateY(-2px);
+        }
+
+        .generate-btn:disabled {
+            background-color: #666;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .spinner {
+            border: 3px solid #333;
+            border-top: 3px solid #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .video-container {
+            margin-bottom: 20px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .download-btn {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #ccc;
+        }
+
+        .error {
+            color: #ff6b6b;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #330000;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .success {
+            color: #51cf66;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #003300;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Video Generator</h1>
+        
+        <form id="videoForm">
+            <div class="form-group">
+                <label for="prompt">Video Prompt *</label>
+                <textarea id="prompt" name="prompt" placeholder="Describe the video you want to generate..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="imageUrl">Start Image URL *</label>
+                <input type="url" id="imageUrl" name="imageUrl" placeholder="https://example.com/image.jpg" required>
+                <div class="url-info" id="urlInfo"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="duration">Duration (seconds)</label>
+                <div class="duration-group">
+                    <input type="number" id="duration" name="duration" value="5" min="1" max="10">
+                    <span>seconds</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="negativePrompt">Negative Prompt (optional)</label>
+                <input type="text" id="negativePrompt" name="negativePrompt" placeholder="What you don't want in the video...">
+            </div>
+
+            <button type="submit" class="generate-btn" id="generateBtn">Generate Video</button>
+        </form>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Generating your video... This may take a few minutes.</p>
+        </div>
+
+        <div class="result" id="result">
+            <h3>Generated Video</h3>
+            <div class="video-container">
+                <video id="generatedVideo" controls></video>
+            </div>
+            <button class="download-btn" id="downloadBtn">Download Video</button>
+        </div>
+
+        <div class="error" id="error"></div>
+        <div class="success" id="success"></div>
+        
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="/logs" target="_blank" style="color: #666; text-decoration: none; font-size: 0.9em;">
+                View Application Logs
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let validatedImageUrl = null;
+
+        // URL validation handling
+        document.getElementById('imageUrl').addEventListener('blur', function(e) {
+            const imageUrl = e.target.value.trim();
+            if (imageUrl) {
+                validateImageUrl(imageUrl);
+            }
+        });
+
+        function validateImageUrl(imageUrl) {
+            const urlInfo = document.getElementById('urlInfo');
+            urlInfo.innerHTML = 'Validating URL...';
+            urlInfo.style.display = 'block';
+
+            fetch('/validate_url', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    image_url: imageUrl
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    urlInfo.innerHTML = `<span style="color: #ff6b6b;">❌ ${data.error}</span>`;
+                    validatedImageUrl = null;
+                } else {
+                    urlInfo.innerHTML = '<span style="color: #51cf66;">✅ Image URL is valid and accessible</span>';
+                    validatedImageUrl = imageUrl;
+                }
+            })
+            .catch(error => {
+                urlInfo.innerHTML = `<span style="color: #ff6b6b;">❌ Validation failed: ${error.message}</span>`;
+                validatedImageUrl = null;
+            });
+        }
+
+        // Form submission
+        document.getElementById('videoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (!validatedImageUrl) {
+                showError('Please enter and validate a valid image URL first.');
+                return;
+            }
+
+            const prompt = document.getElementById('prompt').value;
+            if (!prompt.trim()) {
+                showError('Please enter a video prompt.');
+                return;
+            }
+
+            generateVideo();
+        });
+
+        function generateVideo() {
+            const prompt = document.getElementById('prompt').value;
+            const duration = parseInt(document.getElementById('duration').value);
+            const negativePrompt = document.getElementById('negativePrompt').value;
+
+            // Show loading state
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('generateBtn').disabled = true;
+            hideMessages();
+
+            fetch('/generate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    prompt: prompt,
+                    image_url: validatedImageUrl,
+                    duration: duration,
+                    negative_prompt: negativePrompt
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('generateBtn').disabled = false;
+
+                if (data.error) {
+                    showError(data.error);
+                } else {
+                    showVideo(data.video_url);
+                    showSuccess(data.message);
+                }
+            })
+            .catch(error => {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('generateBtn').disabled = false;
+                showError('Generation failed: ' + error.message);
+            });
+        }
+
+        function showVideo(videoUrl) {
+            const video = document.getElementById('generatedVideo');
+            const result = document.getElementById('result');
+            
+            video.src = videoUrl;
+            result.style.display = 'block';
+            
+            // Set up download button
+            document.getElementById('downloadBtn').onclick = function() {
+                window.open(videoUrl, '_blank');
+            };
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('error');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+            document.getElementById('success').style.display = 'none';
+        }
+
+        function showSuccess(message) {
+            const successDiv = document.getElementById('success');
+            successDiv.textContent = message;
+            successDiv.style.display = 'block';
+            document.getElementById('error').style.display = 'none';
+        }
+
+        function hideMessages() {
+            document.getElementById('error').style.display = 'none';
+            document.getElementById('success').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
