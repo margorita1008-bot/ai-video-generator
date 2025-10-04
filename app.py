@@ -25,7 +25,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Configure Replicate
-os.environ['REPLICATE_API_TOKEN'] = 'r8_epSDg4LMRstkweQhis84p8fzj2P10oT3ldG50'
+# Get API token from environment variable or use default for development
+api_token = os.getenv('REPLICATE_API_TOKEN', 'r8_cCFP2qaAhOVcJYyqzWBoXUBr8ttaTWT2lshlZ')
+os.environ['REPLICATE_API_TOKEN'] = api_token
 
 # Create uploads directory
 UPLOAD_FOLDER = 'uploads'
@@ -65,6 +67,16 @@ def validate_url():
         logger.info(f"Testing URL accessibility: {image_url}")
         response = requests.head(image_url, timeout=10)
         if response.status_code == 200:
+            # Get more details about the image
+            content_type = response.headers.get('content-type', 'unknown')
+            content_length = response.headers.get('content-length', 'unknown')
+            logger.info(f"Image details - Content-Type: {content_type}, Size: {content_length} bytes")
+            
+            # Test if it's actually an image
+            if not content_type.startswith('image/'):
+                logger.warning(f"URL does not appear to be an image. Content-Type: {content_type}")
+                return jsonify({'error': f'URL does not appear to be an image. Content-Type: {content_type}'}), 400
+            
             logger.info(f"URL validation successful: {image_url}")
             return jsonify({'success': True, 'image_url': image_url})
         else:
@@ -102,6 +114,12 @@ def generate_video():
             "negative_prompt": negative_prompt
         }
         logger.info(f"Calling Replicate API with parameters: {replicate_params}")
+        
+
+        # Additional image URL validation
+        logger.info(f"Image URL being used: {image_url}")
+        logger.info(f"Image URL starts with http: {image_url.startswith('http')}")
+        logger.info(f"Image URL length: {len(image_url)}")
         
         # Call Replicate API
         start_time = datetime.now()

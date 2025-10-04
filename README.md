@@ -18,12 +18,18 @@ A web application that generates videos using AI prompts and start images, power
    pip install -r requirements.txt
    ```
 
-2. **Run the application:**
+2. **Set up environment variables (optional):**
+   ```bash
+   # Create .env file
+   echo "REPLICATE_API_TOKEN=your_api_token_here" > .env
+   ```
+
+3. **Run the application:**
    ```bash
    python app.py
    ```
 
-3. **Open your browser and navigate to:**
+4. **Open your browser and navigate to:**
    ```
    http://localhost:5000
    ```
